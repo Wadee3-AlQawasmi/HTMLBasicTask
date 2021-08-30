@@ -1,0 +1,257 @@
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <link href="Style.css" type="text/css" rel="stylesheet" />
+        <meta name="viewport" content="width-device-width,initial scale=1"\>
+        <title>
+            Basic Task
+        </title>
+        <script type="text/javascript">
+            function Toggle(value){
+                switch(value){
+                    case 'General':
+                    document.getElementById('General').style.display="block";
+                    document.getElementById('Password').style.display="none";
+                    document.getElementById('Info').style.display="none";
+                    document.getElementById('Notification').style.display="none";
+                    break;
+                    case 'Password':
+                    document.getElementById('General').style.display="none";
+                    document.getElementById('Password').style.display=" block";
+                    document.getElementById('Info').style.display="none";
+                    document.getElementById('Notification').style.display="none";
+        
+                    break;
+                    case 'Info':
+                    document.getElementById('General').style.display="none";
+                    document.getElementById('Password').style.display="none";
+                    document.getElementById('Info').style.display="block";
+                    document.getElementById('Notification').style.display="none";
+                    break;
+                    case 'Notification':
+                    document.getElementById('General').style.display="none";
+                    document.getElementById('Password').style.display="none";
+                    document.getElementById('Info').style.display="none";
+                    document.getElementById('Notification').style.display="block";
+                    break;
+        }
+    }
+    </script>
+        
+    </head>
+
+    <body>
+        
+        <div class="acc">
+            Account Setting
+
+        </div>
+
+        <div class="planbox">
+
+            <div class="Box1">
+
+                <div class="GCIN" onclick="Toggle('General')">
+                    Genral
+                </div>
+
+                <div class="GCIN" onclick="Toggle('Password')">
+                    Change Password
+                </div>
+
+                <div class="GCIN" onclick="Toggle('Info')">
+                    Info
+                </div>
+
+                <div class="GCIN"onclick="Toggle('Notification')">
+                    Notification
+                </div>
+            </div>
+
+            <div class="Box2" id="General">
+
+                <div>
+                    <div class="Avatar" style="float: left;">
+                        <img src="avatar.png" width="65px" height="65px" />
+                    </div>
+                    <div style="float: left;">
+                            <div style="float: left;">
+                                <button class="ButtonUppload"> Upload New Photo</button>
+                            </div>
+                            <div style="float: left;">
+                                <button class="ButtonReset">Reset</button>
+                            </div>
+                            <div style="clear: left">
+                                <label class="text">Allowed JPG,GIF or PNG,Max Size Of 800k </label>
+                            </div>
+                    </div>
+                </div>
+                <div class="PaddingBox">
+                    <div style="clear:left" class="mar">
+                        <label> Username </label>
+                    </div>
+                    <input class="textBox" type="text" id="div"/>
+                </div>
+
+                
+                <div class="PaddingBox">
+                    <div class="mar">
+                        <label> Name </label>
+                    </div>
+                    <input class="textBox" type="text" id="div" />
+                </div>
+
+                <div class="PaddingBox">
+                    <div class="mar">
+                        <label> Email </label>
+                    </div>
+                    <input class="textBox" type="text" required pattern="\w(\w|\d)*@\w(\w|\d)*.\w{2,3}" id="div"/>
+                </div>
+
+                <div class="confirm">
+                    <div class="PaddingBox" >
+                    <label> Your Email is not confirmed. Please check your inbox </label>
+                    </div>
+                    <div class="PaddingBox" margin-left: -3px;>
+                        <a href="AccountSetting.html">Resend Confirmation</a>
+                    </div>
+                </div>
+                
+                <div class="PaddingBox">
+                    <div class="mar">
+                    <label>Company</label>
+                    </div>
+                    <div>
+                        <input class="textBox" type="text" id="div"/>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="PaddingBox" style="float: left;">
+                        <button class="savechange">Save Changes</button>
+                    </div>
+                    <div class="PaddingBox" style="float: left; margin-left: -12px;">
+                        <button class="cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: none;" id="Password" class="divBoxright">
+                
+                <div>
+                    Current Password
+                </div>
+                <div>
+                    <input type="text" class="ChangePassText"/>
+                </div>
+
+                <div class="mar2">
+                    New Password
+                </div>
+                <div>
+                    <input type="text" class="ChangePassText" />
+                </div>
+
+                <div class="mar2">
+                    Repeat New Password
+                </div>
+                <div>
+                    <input type="text" class="ChangePassText" />
+                </div>
+                
+                <div>
+                    <div style="float: left;">
+                        <button class="ButtonSaveChangePass">Save Changes</button>
+                    </div>
+
+                    <div style="float: left; ">
+                        <button class="CancelPass">Cancel</button>
+                    </div>
+                </div>
+               
+            </div>
+
+            <div style="display: none;" id="Info" class="divBoxright">
+                <div>
+                    Bio
+                </div>
+                <div>
+                    <input type="text" class="TextBoxInfo" />
+                </div>
+
+                <div>
+                    BirthDay
+                </div>
+                <div>
+                    <input class="TextDate" type="date"/>
+                </div>
+                <div>
+                    Country
+                </div>
+                <div>
+                  <select class="TextBoxInfo" style="height: 27px;">
+                    <option >USA</option>
+                  </select>
+                </div>
+                <div class="Contacts">
+                    Contacts
+                </div>
+                <div>
+                    Phone
+                </div>
+                <div>
+                    <input type="text" class="TextBoxInfo" />
+                </div>
+                <div>
+                    WebSite
+                </div> 
+                <div>
+                    <input type="text" class="TextBoxInfo" />
+                </div>
+                <div style="float: left;">
+                    <button class="SaveChangeInfo">Save Change</button>
+                </div>
+                <div style="float: left;">
+                    <button class="CancelInfo">Cancel</button>
+                </div>
+
+            </div>
+
+
+
+
+            <div style="display: none;" id="Notification" class="divBoxright">
+                <div class="Act">
+                    Activity
+                </div>
+                <div class="Padding">
+                    <input type="checkbox" id="1">Email me when someone comments on my article 
+                </div>
+                <div class="Padding">
+                    <input type="checkbox" id="1"\>Email me when someone answers on my forum thread 
+                </div>
+                <div class="Padding">    
+                    <input type="checkbox" id="1"\>Email me when someone follows me 
+                </div>
+                <div class="App">
+                    Application
+                </div>
+                <div class="Padding">
+                    <input type="checkbox" id="1">News and aanouncements
+                </div>
+                <div class="Padding">
+                    <input type="checkbox" id="1">Wheckly product updates
+                </div>
+                <div class="Padding">
+                    <input type="checkbox" id="1">wheckly blog digest
+                </div>
+                <div>
+                    <button class="SaveChangeInfo">Save Change</button>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

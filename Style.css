@@ -1,0 +1,328 @@
+body
+{
+    background-color: #EEEE;
+}
+
+.acc
+{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 155px;
+    font-weight: bold;
+}
+
+.planbox
+{
+    width: 900px;
+    height: 530px;
+    margin-top: 30px;
+    background: white;
+    border: 2px solid;
+    margin-left: 150px;
+    color: #555555;   
+}
+
+.Box1
+{
+    width: 300px;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+
+}
+
+.Box2
+{
+    width: 570px;
+    height: 530px;
+    margin-left: -63px;
+    float: left;
+}
+
+.GCIN
+{
+
+    border-bottom: 2px solid;
+    font-weight: bold;
+    width: 220px;
+    height: 40PX;
+    color: dimgray;
+    border-color: #E6ECF3;
+    padding-top: 20px;
+}
+
+.GCIN:hover
+{
+    background: #F0F0F0;
+
+}
+
+.Avatar
+{
+    margin: 20px 20px 15px 15px;
+    
+}
+
+.ButtonUppload
+{
+    
+    width: 127px;
+    height: 40px;
+    margin: 28px 0px 5px 0px;
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #428bca;
+    border-color: #357ebd
+    
+}
+
+.ButtonUppload:hover
+    {
+     cursor: pointer;
+     background-color: #3276b1;
+     border-color: #285e8e;       
+    }
+
+
+.ButtonReset
+{
+    
+    width: 70px;
+    height: 40px;
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    margin: 28px 0px 5px 10px;
+}
+
+.ButtonReset:hover
+{
+    cursor: pointer;
+}
+.text{
+    font-size: 11px;
+}
+.mar
+{
+    margin-left: 5px;
+}
+
+.textBox
+{
+    margin-left: 5px;
+    width: 545px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    height: 22px;
+}
+
+.textBox:focus
+{
+    border-color: #3276b1;
+    outline: 0;
+    
+}
+
+.PaddingBox
+{
+    padding: 10px;
+}
+
+.confirm
+{
+    background-color: #FFF3CD;
+    width: 550px;
+    margin-left: 15px;
+}
+
+.savechange
+{
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #428bca;
+    border-color: #357ebd;
+    width: 105px;
+    height: 40px;
+    margin-left: 340px;
+}
+
+.savechange:hover{
+    cursor: pointer;
+    background-color: #3276b1;
+    border-color: #285e8e;
+}
+
+.cancel
+{
+    width: 57px;
+    height: 40px;
+    color: #333333;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+}
+.cancel:hover
+{
+    cursor: pointer;
+}
+
+.textBox:focus
+{
+    border-color: #3276b1;
+    outline: 0;
+    
+}
+
+.ChangePassText
+{
+    width: 490px;
+    border-radius: 4px;
+    border: 1px solid;
+    height: 20px;
+    margin-bottom: 2px;
+}
+
+.ChangePassText:focus
+{
+    border-color: #3276b1;
+    outline: 0;
+    
+}
+
+.divBoxright
+{
+    margin-left: 319px;
+    margin-top: 35px;
+    width: 500px;
+    height: 300px;
+}
+
+.mar2
+{
+    margin-top: 20px;
+}
+
+.ButtonSaveChangePass
+{
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #428bca;
+    border-color: #357ebd;
+    width: 105px;
+    height: 33px;
+    margin-left: 329px;
+    margin-top: 10px;
+}
+
+.ButtonSaveChangePass:hover
+{
+    cursor: pointer;
+    background-color: #3276b1;
+    border-color: #285e8e;
+}
+
+.CancelPass
+{
+    width: 57px;
+    height: 33px;
+    color: #333333;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    margin: 10px 0px 0px 6px;
+}
+
+.CancelPass:hover
+{
+    cursor: pointer;
+}
+
+.TextDate
+{
+    width: 492px;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid;
+    margin-bottom: 18px;
+}
+
+.TextBoxInfo
+{
+    width: 490px;
+    border-radius: 4px;
+    border: 1px solid;
+    height: 20px;
+    margin-bottom: 18px;
+}
+.TextBoxInfo:focus
+{
+    border-color: #3276b1;
+    outline: 0;
+}
+
+.Contacts
+{
+    padding-top: 35px;
+    padding-bottom: 16px;
+    font-size: 25px;
+}
+
+.SaveChangeInfo
+{
+    margin-left: 334px;
+    width: 97px;
+    height: 30px;
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+.SaveChangeInfo:hover
+{
+    cursor: pointer;
+    background-color: #3276b1;
+    border-color: #285e8e;   
+}
+
+.CancelInfo
+{
+    width: 58px;
+    height: 30px;
+    margin-left: 6px;
+    color: #333333;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+}
+
+.CancelInfo:hover
+{
+    cursor: pointer;
+}
+
+.Act 
+{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.App
+{
+    padding-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.Padding {
+    padding-bottom: 8px;
+}
+

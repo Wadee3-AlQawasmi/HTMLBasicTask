@@ -1,0 +1,41 @@
+General Styles:
+    background color:#EEEE
+    Menu Items Border bottom:#E6ECF3
+    Menu Item Highlight:#F0F0F0
+
+textbox Styles:
+    border: 1px solid #cccccc;
+    border radius: 4px;
+    color: #555555;
+
+textbox styles on focus:
+    Border color:#66afe9
+
+Upload Button Styles:
+    color: #ffffff; 
+    border: 1px solid transparent;
+    border radius: 4px;
+    background color: #428bca;
+    border color: #357ebd;
+
+ButtonSubmit on hover:
+    background-color: #3276b1;
+    border-color: #285e8e;
+
+Reset Button Style:
+    color: #ffffff; 
+    border: 1px solid transparent;
+    border radius: 4px;
+    background color: #d9534f;
+    border color: #d43f3a;
+
+Confirm Account styles:
+    background color: #FFF3CD;
+
+Button Cancel:
+    color: #333333;
+    background color: #ffffff;
+    border color: #cccccc;
+
+
+
