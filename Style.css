@@ -22,7 +22,7 @@ body
     color: #555555;   
 }
 
-.Box1
+.LeftBox
 {
     width: 300px;
     height: 250px;
@@ -32,11 +32,10 @@ body
 
 }
 
-.Box2
+.RightBox
 {
     width: 570px;
     height: 530px;
-    margin-left: -63px;
     float: left;
 }
 
@@ -66,15 +65,16 @@ body
 
 .ButtonUppload
 {
-    
-    width: 127px;
-    height: 40px;
-    margin: 28px 0px 5px 0px;
+    display: block;
+    width: 130px;
+    height: 23px;
     color: #ffffff;
     border: 1px solid transparent;
     border-radius: 4px;
     background-color: #428bca;
-    border-color: #357ebd
+    border-color: #357ebd;
+    margin-top: 27px;
+    padding: 10px 0px 6px 5px;
     
 }
 
@@ -106,15 +106,18 @@ body
 .text{
     font-size: 11px;
 }
+
+
 .mar
 {
     margin-left: 5px;
+    clear: left;
 }
 
 .textBox
 {
     margin-left: 5px;
-    width: 545px;
+    width: 530px;
     border: 1px solid #cccccc;
     border-radius: 4px;
     height: 22px;
@@ -127,35 +130,21 @@ body
     
 }
 
+
 .PaddingBox
 {
-    padding: 10px;
+    padding-top: 20px;
 }
 
 .confirm
 {
     background-color: #FFF3CD;
-    width: 550px;
-    margin-left: 15px;
+    width: 535px;
+    height: 80px;
+    margin-top: 10px;
 }
 
-.savechange
-{
-    color: #ffffff;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    background-color: #428bca;
-    border-color: #357ebd;
-    width: 105px;
-    height: 40px;
-    margin-left: 340px;
-}
 
-.savechange:hover{
-    cursor: pointer;
-    background-color: #3276b1;
-    border-color: #285e8e;
-}
 
 .cancel
 {
@@ -165,157 +154,54 @@ body
     background-color: #ffffff;
     border-radius: 4px;
     border: 1px solid #cccccc;
+    margin-left: 7px;
 }
 .cancel:hover
 {
     cursor: pointer;
 }
 
-.textBox:focus
-{
-    border-color: #3276b1;
-    outline: 0;
-    
-}
-
-.ChangePassText
-{
-    width: 490px;
-    border-radius: 4px;
-    border: 1px solid;
-    height: 20px;
-    margin-bottom: 2px;
-}
-
-.ChangePassText:focus
-{
-    border-color: #3276b1;
-    outline: 0;
-    
-}
-
-.divBoxright
-{
-    margin-left: 319px;
-    margin-top: 35px;
-    width: 500px;
-    height: 300px;
-}
-
-.mar2
-{
-    margin-top: 20px;
-}
-
-.ButtonSaveChangePass
-{
-    color: #ffffff;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    background-color: #428bca;
-    border-color: #357ebd;
-    width: 105px;
-    height: 33px;
-    margin-left: 329px;
-    margin-top: 10px;
-}
-
-.ButtonSaveChangePass:hover
-{
-    cursor: pointer;
-    background-color: #3276b1;
-    border-color: #285e8e;
-}
-
-.CancelPass
-{
-    width: 57px;
-    height: 33px;
-    color: #333333;
-    background-color: #ffffff;
-    border-radius: 4px;
-    border: 1px solid #cccccc;
-    margin: 10px 0px 0px 6px;
-}
-
-.CancelPass:hover
-{
-    cursor: pointer;
-}
 
 .TextDate
 {
-    width: 492px;
+    width: 530px;
     height: 25px;
     border-radius: 4px;
     border: 1px solid;
     margin-bottom: 18px;
 }
 
-.TextBoxInfo
-{
-    width: 490px;
-    border-radius: 4px;
-    border: 1px solid;
-    height: 20px;
-    margin-bottom: 18px;
-}
-.TextBoxInfo:focus
-{
-    border-color: #3276b1;
-    outline: 0;
-}
 
 .Contacts
 {
-    padding-top: 35px;
-    padding-bottom: 16px;
+    padding-top: 20px;
+    padding-bottom: 12px;
     font-size: 25px;
+    
 }
 
-.SaveChangeInfo
+.btnSaveChange
 {
-    margin-left: 334px;
-    width: 97px;
-    height: 30px;
+    margin-left: 375px;
+    width: 102px;
+    height: 40px;
     color: #ffffff;
     border: 1px solid transparent;
     border-radius: 4px;
     background-color: #428bca;
     border-color: #357ebd;
 }
-.SaveChangeInfo:hover
+.btnSaveChange:hover
 {
     cursor: pointer;
     background-color: #3276b1;
     border-color: #285e8e;   
 }
 
-.CancelInfo
-{
-    width: 58px;
-    height: 30px;
-    margin-left: 6px;
-    color: #333333;
-    background-color: #ffffff;
-    border-radius: 4px;
-    border: 1px solid #cccccc;
-}
 
-.CancelInfo:hover
+.FontSizeAccApp
 {
-    cursor: pointer;
-}
-
-.Act 
-{
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.App
-{
-    padding-top: 30px;
+    padding-top: 20px;
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 10px;

@@ -50,7 +50,7 @@
 
         <div class="planbox">
 
-            <div class="Box1">
+            <div class="LeftBox">
 
                 <div class="GCIN" onclick="Toggle('General')">
                     Genral
@@ -69,7 +69,7 @@
                 </div>
             </div>
 
-            <div class="Box2" id="General">
+            <div class="RightBox" id="General">
 
                 <div>
                     <div class="Avatar" style="float: left;">
@@ -77,7 +77,8 @@
                     </div>
                     <div style="float: left;">
                             <div style="float: left;">
-                                <button class="ButtonUppload"> Upload New Photo</button>
+                                <input type="file" id="upload" hidden/>
+                                <label for="upload" class="ButtonUppload" > Upload New Photo</label>
                             </div>
                             <div style="float: left;">
                                 <button class="ButtonReset">Reset</button>
@@ -88,7 +89,7 @@
                     </div>
                 </div>
                 <div class="PaddingBox">
-                    <div style="clear:left" class="mar">
+                    <div class="mar">
                         <label> Username </label>
                     </div>
                     <input class="textBox" type="text" id="div"/>
@@ -109,12 +110,13 @@
                     <input class="textBox" type="text" required pattern="\w(\w|\d)*@\w(\w|\d)*.\w{2,3}" id="div"/>
                 </div>
 
-                <div class="confirm">
+                <div class="confirm" style="margin-left: 5px;">
                     <div class="PaddingBox" >
-                    <label> Your Email is not confirmed. Please check your inbox </label>
+                    <label style="margin-left: 15px;"> Your Email is not confirmed. Please check your inbox </label>
                     </div>
-                    <div class="PaddingBox" margin-left: -3px;>
-                        <a href="AccountSetting.html">Resend Confirmation</a>
+                    <br>
+                    <div>
+                        <a href="AccountSetting.html" style="margin-left: 15px;">Resend Confirmation</a>
                     </div>
                 </div>
                 
@@ -129,91 +131,103 @@
 
                 <div>
                     <div class="PaddingBox" style="float: left;">
-                        <button class="savechange">Save Changes</button>
+                        <button class="btnSaveChange">Save Changes</button>
                     </div>
-                    <div class="PaddingBox" style="float: left; margin-left: -12px;">
+                    <div class="PaddingBox" style="float: left; ">
                         <button class="cancel">Cancel</button>
                     </div>
                 </div>
             </div>
 
-            <div style="display: none;" id="Password" class="divBoxright">
-                
-                <div>
+            <div style="display: none;" id="Password" class="RightBox">
+                <div class="PaddingBox">
+                <div class="mar">
                     Current Password
                 </div>
-                <div>
-                    <input type="text" class="ChangePassText"/>
+                <div >
+                    <input type="text" class="textBox"/>
                 </div>
-
-                <div class="mar2">
+            </div>
+            <div class="PaddingBox">
+                <div class="mar">
                     New Password
                 </div>
                 <div>
-                    <input type="text" class="ChangePassText" />
+                    <input type="text" class="textBox" />
                 </div>
-
-                <div class="mar2">
+            </div>
+            <div class="PaddingBox">
+                <div class="mar">
                     Repeat New Password
                 </div>
                 <div>
-                    <input type="text" class="ChangePassText" />
+                    <input type="text" class="textBox" />
                 </div>
-                
+            </div>
                 <div>
-                    <div style="float: left;">
-                        <button class="ButtonSaveChangePass">Save Changes</button>
+                    <div style="float: left;" class="PaddingBox">
+                        <button class="btnSaveChange">Save Changes</button>
                     </div>
 
                     <div style="float: left; ">
-                        <button class="CancelPass">Cancel</button>
+                        <button style="margin-top: 19px;" class="cancel">Cancel</button>
                     </div>
                 </div>
                
             </div>
 
-            <div style="display: none;" id="Info" class="divBoxright">
+          <div style="display: none;" id="Info" class="RightBox">
+             <div class="PaddingBox">
                 <div>
                     Bio
                 </div>
                 <div>
-                    <input type="text" class="TextBoxInfo" />
+                    <input type="text" class="textBox" style="margin-left: 0px;"/>
                 </div>
-
+            </div>
+            <div class="PaddingBox">
                 <div>
                     BirthDay
                 </div>
                 <div>
-                    <input class="TextDate" type="date"/>
+                    <input class="TextDate" type="date" style="margin-left: 0px;"/>
                 </div>
+            </div>
+            <div class="PaddingBox">
                 <div>
                     Country
                 </div>
                 <div>
-                  <select class="TextBoxInfo" style="height: 27px;">
+                  <select class="textBox" style="height: 27px; margin-left:0px ;">
                     <option >USA</option>
                   </select>
                 </div>
+            </div>
+            
                 <div class="Contacts">
                     Contacts
                 </div>
+             <div class="PaddingBox">
                 <div>
                     Phone
                 </div>
                 <div>
-                    <input type="text" class="TextBoxInfo" />
+                    <input type="text" class="textBox" style="margin-left: 0px;"/>
                 </div>
+             </div>
+             <div class="PaddingBox">
                 <div>
                     WebSite
                 </div> 
                 <div>
-                    <input type="text" class="TextBoxInfo" />
+                    <input type="text" class="textBox" style="margin-left: 0px;"/>
+                </div>
+             </div>
+                <div style="float: left;">
+                    <button class="btnSaveChange" style="margin-top: 10px;">Save Change</button>
                 </div>
                 <div style="float: left;">
-                    <button class="SaveChangeInfo">Save Change</button>
-                </div>
-                <div style="float: left;">
-                    <button class="CancelInfo">Cancel</button>
+                    <button class="cancel" style="margin-top: 10px;">Cancel</button>
                 </div>
 
             </div>
@@ -221,8 +235,9 @@
 
 
 
-            <div style="display: none;" id="Notification" class="divBoxright">
-                <div class="Act">
+        <div style="display: none;" id="Notification" class="RightBox">
+            <div class="PaddingBox">
+                <div class="FontSizeAccApp">
                     Activity
                 </div>
                 <div class="Padding">
@@ -234,7 +249,7 @@
                 <div class="Padding">    
                     <input type="checkbox" id="1"\>Email me when someone follows me 
                 </div>
-                <div class="App">
+                <div class="FontSizeAccApp">
                     Application
                 </div>
                 <div class="Padding">
@@ -247,7 +262,7 @@
                     <input type="checkbox" id="1">wheckly blog digest
                 </div>
                 <div>
-                    <button class="SaveChangeInfo">Save Change</button>
+                    <button class="btnSaveChange">Save Change</button>
                 </div>
             </div>
         </div>
